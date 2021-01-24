@@ -109,7 +109,9 @@ body{
         margin-left: 30px;
     }
     a:hover{
-        color:gray; 
+        background-color: transparent;
+        color:black; 
+        border:none;
     }
     main#main{
        max-width:100%;
