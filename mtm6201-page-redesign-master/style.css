@@ -1,6 +1,10 @@
+/* to change the font of whole html */
 body{
     font-family: sans-serif;
+    margin: 0;
+    padding:0;
     }
+    /* navigation */
     nav#nav{
         max-width:100%;
         background-color:#2E282A;
@@ -8,7 +12,6 @@ body{
         grid-template-rows:repeat(3, 1fr);
         border: none;
         padding:0;
-        width:100%;
     
     }
     nav a{
@@ -28,62 +31,97 @@ body{
     a:last-child{
         border: none;
     }
+    /* main */
     main#main{
         max-width:100%;
         background-color: white;
     }
+    /* home section */
     section#home{
         background-color: #2E282A;
         color: white;
         font-family: sans-serif;
+    }
+    #home p{
+        margin:0;
+        padding-bottom: 20px;
     }
     section#home{
         padding:0;
     }
     h1.page-title{
         font-size: 3em;
-        padding-bottom: 0;
+        padding-bottom: 15px;
         padding-left: 0;
         padding-right: 0;
-        padding-top: 90px;
-        margin:0; 
+        padding-top: 70px;
+        margin: 0px
     }
-    section p{
-        padding-bottom: 30px;
+    section#about p:last-child{
+        padding-top: 20px;
+        padding-bottom: 50px;
+    margin: 0;
+    
+    }
+    /* about section */
+    #about p{
+        text-align: center;
+        font-size: larger;
+        padding: 10px;
+    }
+    #contact p{
+         font-size: larger;
+         padding: 10px;
     }
     section#about{
-        background-color: #b6b6b6;
+        background-color: #ffee00;
         color:#2E282A;
         padding:0;
         font-size: medium;
     }
     img.about-image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 150px;
-        margin-left:1em;
-        margin-top: -1em;
-     }
+        float: none;
+    }
+
      h2.section-title{
         font-size: 3em;  
-        padding-top: 1em;
+        padding-top: 25px;
         padding-bottom: 0.5em;
         margin: 0;
     
     }
+    /* contact */
     section#contact{
         background-color:#b0cfef; 
         color: #2E282A;
-        padding:0;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+        padding-left: 0px;
     }
     form.contact-form{
-        width:300px;
+        width:50%;
         background-color: #2E282A;
         color:white;
-        margin-bottom: 30px;
     }
     button{
         padding:1em;
         margin-top: 6px;
+        border: none;
+        border-radius: 20px;
+        background-color: #ffee00;
+        color:#2E282A;
     }
+    button:hover{
+        background-color:#2E282A;
+        color: #ffee00;
+        border:1px solid white;
+    }
+    /* footer */
     footer{
         background-color: #2E282A;
     }
@@ -93,10 +131,16 @@ body{
         padding: 6px;
         margin: 0;
     }
+    input,textarea{
+        border-radius: 20px;
+    }
+    /* styles for desktop */
     @media screen and (min-width: 760px){
     nav#nav{
         display: flex;
         flex-direction: row;
+        position:fixed;
+        width: -webkit-fill-available;
         
     }
     nav a{
@@ -105,20 +149,19 @@ body{
         border:none;
     }
     .nav a.nav-link{
-        margin-top: 20px;
-        margin-left: 30px;
+
     }
     a:hover{
         background-color: transparent;
         color:black; 
         border:none;
     }
+    /* grid to divide sections */
     main#main{
        max-width:100%;
        display: grid;
        grid-template-columns:repeat(2, 1fr);
-       grid-template-rows:repeat(2);
-    
+       grid-template-rows: 660px 625px;
     }
      section:nth-child(1){
         grid-area:1/1/2/3;
@@ -134,23 +177,27 @@ body{
     }
     h1.page-title{
         font-size: 4em;
+        position: static;
         padding-bottom: 0;
         padding-left: 0;
         padding-right: 0;
-        padding-top: 30px;
+        padding-top: 70px;
         margin:0; 
     }
     section#about{
-        padding-top: 140px;
+        padding-top: 0px;
         padding-left:2em;
         padding-right:2em;
     }
     img.about-image{
-       width: 145px;
-       margin-left:1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        float: none;
     }
     section#contact{
-        padding-top: 140px;
+        padding-top: 0px;
         padding-left:2em;
         padding-right:2em;
         background-color:#b0cfef; 
