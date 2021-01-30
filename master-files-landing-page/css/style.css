@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ---------------------------------
+          Custom Styles
+------------------------------------ */
+html {
+    font-family:'Montserrat';
+    font-size: 14px;
+    box-sizing: border-box;
+    padding:0;
+  }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+  margin: 9px 0;
+}
+p{
+    margin: 9px 0;
+}
+h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3.375rem;
+  }
+  
+  h3 {
+    font-size: 2.25rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  h5 {
+    font-size: 1rem;
+  }
+
+  body {
+    line-height: 1.5;
+  }
+  p{
+    font-size: 18px;
+}
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+    line-height: inherit;
+  }
+  
+  
+  .clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+body{
+    background-color:#f7f7ff;
+}
+.site-logo{
+    width:120px;
+    }
+.container{
+            max-width: 300px;
+            margin: 0 auto;
+}
+main{
+    /* background-image:url(../images/bg-image/scooter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 600px; */
+    padding: 90px 0;
+    display: grid;
+    grid-template-rows:auto;
+    grid-gap: 1em;
+}
+.site-text{
+    grid-row:auto;
+}
+.scooter{
+    grid-row:auto;
+}
+.resgisteration-form{
+    grid-row:auto;
+}
+.resgisteration-form{
+    background-color: white;
+    border-radius: 1em;
+    padding: 38px;
+    box-shadow: 5px 6px 17px 0px rgba(0,0,0,0.50)
+}
+.registration-button{
+    background-color:#57eeab;
+    border: none;
+    border-radius:0.5em;
+    font-weight: bold;
+    font-size: x-large;
+    width: 100%;
+    text-align: center;
+    margin: 9px 0;
+}
+.small-text{
+    font-size: smaller;
+    margin:0 9px;
+}
+.small-anchor{
+    color:#ff8480;
+    text-decoration: none;
+}
+.input-box{
+    width: 100%;
+    margin: 5px auto;
+    background-color: #f7f7ff;
+    border: none;
+    border-radius: 0.5em;
+    color: #9b9b9b;
+    padding: 1em;
+    font-family:"montserrat";
+  }
+footer{
+    background-color: #fffd8c;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+}
+    main{
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows:repeat(0);
+    }
+    .site-text{
+        grid-column:1/2;
+        grid-row: none;
+    }
+    .scooter{
+        grid-column:1/4;
+        grid-row: none;
+        margin: 0 auto;
+    }
+    .resgisteration-form{
+        grid-column:3/4;
+        grid-row: none;
+    }
+}
