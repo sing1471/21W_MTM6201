@@ -200,17 +200,13 @@ body{
     width:120px;
     }
 .container{
-            max-width: 300px;
+            max-width: 60%;
             margin: 0 auto;
 }
 main{
-    /* background-image:url(../images/bg-image/scooter.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 600px; */
-    padding: 90px 0;
+    padding-bottom: 80px;
+    padding-top:30px;
     display: grid;
-    grid-template-rows:auto;
     grid-gap: 1em;
 }
 .site-text{
@@ -225,7 +221,7 @@ main{
 .resgisteration-form{
     background-color: white;
     border-radius: 1em;
-    padding: 38px;
+    padding: 26px;
     box-shadow: 5px 6px 17px 0px rgba(0,0,0,0.50)
 }
 .registration-button{
@@ -258,16 +254,50 @@ main{
   }
 footer{
     background-color: #fffd8c;
+    padding: 1em;
 }
-
-@media screen and (min-width: 768px){
+.footer-form .input-box{
+  margin: 0;
+}
+.footer-form{
+  display:grid;
+  grid-template-columns:1fr 3fr;
+  grid-template-rows:repeat(2,1fr);
+  grid-gap:9px;
+  margin-bottom: 9px;
+}
+.calculate-button{
+  grid-area:2/1/3/3;
+  background-color: #ff8480;
+  color:#f7f7ff;
+  border: none;
+  border-radius: 0.5em;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  height: 45px;
+}
+.social-media-logos{
+  display:flex;
+  justify-content: space-between;
+  width:190px;
+  margin: 0 auto;
+}
+.hide-text{
+  display: none;
+}
+@media screen and (min-width:375px) and (max-width: 768px){
     .container{
-        max-width: 1200px;
-        margin: 0 auto;
+        max-width: 60%;
+        margin: 0 auto;}
 }
+@media screen and (min-width:769px){
+  .container{
+    max-width: 94%;
+    margin: 0 auto;
+  }
     main{
         grid-template-columns:repeat(3, 1fr);
-        grid-template-rows:repeat(0);
     }
     .site-text{
         grid-column:1/2;
@@ -277,9 +307,38 @@ footer{
         grid-column:1/4;
         grid-row: none;
         margin: 0 auto;
+        width: 50%;
     }
     .resgisteration-form{
         grid-column:3/4;
         grid-row: none;
     }
+    .social-media-logos{
+      float: right;
+     }
+     .footer-form{
+      grid-template-rows:auto;
+      }
+      .footer-form{
+        grid-template-columns:1fr 2fr 2fr;
+        grid-template-rows:auto;
+        grid-gap:9px;
+      }
+      .calculate-button{
+        grid-area: auto;
+      }
+    .web-footer{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+    .part2{
+     margin: auto 0;
+    }
+    footer p{
+      font-size: 14px;
+    }
+    .hide-text{
+      display: contents;
+    }
+
 }
