@@ -133,15 +133,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /* ---------------------------------
           Custom Styles
 ------------------------------------ */
 html {
-    font-family:'Montserrat';
-    font-size: 14px;
-    box-sizing: border-box;
-    padding:0;
-  }
+  font-family: 'Montserrat';
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -150,195 +152,241 @@ h5 {
   font-weight: bold;
   margin: 9px 0;
 }
-p{
-    margin: 9px 0;
+
+p {
+  margin: 9px 0;
 }
+
 h1 {
-    font-size: 4rem;
-  }
-  
-  h2 {
-    font-size: 3.375rem;
-  }
-  
-  h3 {
-    font-size: 2.25rem;
-  }
-  
-  h4 {
-    font-size: 1.5rem;
-  }
-  
-  h5 {
-    font-size: 1rem;
-  }
-
-  body {
-    line-height: 1.5;
-  }
-  p{
-    font-size: 18px;
+  font-size: 4rem;
 }
 
-  *,
-  *::after,
-  *::before {
-    box-sizing: inherit;
-    line-height: inherit;
-  }
-  
-  
-  .clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
-  }
-body{
-    background-color:#f7f7ff;
+h2 {
+  font-size: 3.375rem;
 }
-.site-logo{
-    width:120px;
-    }
-.container{
-            max-width: 60%;
-            margin: 0 auto;
+
+h3 {
+  font-size: 2.25rem;
 }
-main{
-    padding-bottom: 80px;
-    padding-top:30px;
-    display: grid;
-    grid-gap: 1em;
+
+h4 {
+  font-size: 1.5rem;
 }
-.site-text{
-    grid-row:auto;
+
+h5 {
+  font-size: 1rem;
 }
-.scooter{
-    grid-row:auto;
+
+body {
+  line-height: 1.5;
 }
-.resgisteration-form{
-    grid-row:auto;
+
+p {
+  font-size: 18px;
 }
-.resgisteration-form{
-    background-color: white;
-    border-radius: 1em;
-    padding: 26px;
-    box-shadow: 5px 6px 17px 0px rgba(0,0,0,0.50)
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  line-height: inherit;
 }
-.registration-button{
-    background-color:#57eeab;
-    border: none;
-    border-radius:0.5em;
-    font-weight: bold;
-    font-size: x-large;
-    width: 100%;
-    text-align: center;
-    margin: 9px 0;
+
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
 }
-.small-text{
-    font-size: smaller;
-    margin:0 9px;
+
+/*mobile styles*/
+body {
+  background-color: #f7f7ff;
 }
-.small-anchor{
-    color:#ff8480;
-    text-decoration: none;
+
+.site-logo {
+  width: 120px;
 }
-.input-box{
-    width: 100%;
-    margin: 5px auto;
-    background-color: #f7f7ff;
-    border: none;
-    border-radius: 0.5em;
-    color: #9b9b9b;
-    padding: 1em;
-    font-family:"montserrat";
-  }
-footer{
-    background-color: #fffd8c;
-    padding: 1em;
+
+/* to make the whole content of whole in center*/
+.container {
+  max-width: 60%;
+  margin: 0 auto;
 }
-.footer-form .input-box{
+
+main {
+  padding-bottom: 80px;
+  padding-top: 30px;
+}
+
+.resgisteration-form {
+  background-color: white;
+  border-radius: 1em;
+  padding: 18px 30px;
+  box-shadow: 5px 6px 17px 0px rgba(0, 0, 0, 0.50)
+}
+
+.registration-button {
+  background-color: #57eeab;
+  border: none;
+  border-radius: 0.5em;
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  margin: 9px 0;
+}
+
+.small-text {
+  font-size: smaller;
+  margin: 0 9px;
+}
+
+.small-anchor {
+  color: #ff8480;
+  text-decoration: none;
+}
+
+.input-box {
+  width: 100%;
+  margin: 5px auto;
+  background-color: #f7f7ff;
+  border: none;
+  border-radius: 0.5em;
+  color: #9b9b9b;
+  padding: 1em;
+}
+
+footer {
+  background-color: #fffd8c;
+  padding: 1em;
+}
+
+.footer-form .input-box {
   margin: 0;
 }
-.footer-form{
-  display:grid;
-  grid-template-columns:1fr 3fr;
-  grid-template-rows:repeat(2,1fr);
-  grid-gap:9px;
-  margin-bottom: 9px;
+
+/* to make both input box and calculate button in different line  */
+.footer-form {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 9px;
 }
-.calculate-button{
-  grid-area:2/1/3/3;
+
+.calculate-button {
+  grid-area: 2/1/3/3;
   background-color: #ff8480;
-  color:#f7f7ff;
+  color: #f7f7ff;
   border: none;
   border-radius: 0.5em;
   font-weight: bold;
   font-size: 18px;
-  text-align: center;
   height: 45px;
 }
-.social-media-logos{
-  display:flex;
+
+/* to align the social media logos horizontaly */
+.social-media-logos {
+  display: flex;
   justify-content: space-between;
-  width:190px;
-  margin: 0 auto;
+  width: 190px;
+  margin: 9px auto;
 }
-.hide-text{
+
+/* to hide the text while on mobile view */
+.hide-text {
   display: none;
 }
-@media screen and (min-width:375px) and (max-width: 768px){
-    .container{
-        max-width: 60%;
-        margin: 0 auto;}
+
+/* styles for tablet */
+@media screen and (min-width:375px) and (max-width: 768px) {
+
+  /* to make the whole content of whole in center*/
+  .container {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .footer-form {
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto;
+    grid-gap: 9px;
+  }
+
+  .calculate-button {
+    grid-area: auto;
+  }
 }
-@media screen and (min-width:769px){
-  .container{
+
+/* styles for desktop */
+@media screen and (min-width:769px) {
+
+  /* to center the whole content of website */
+  .container {
     max-width: 94%;
     margin: 0 auto;
   }
-    main{
-        grid-template-columns:repeat(3, 1fr);
-    }
-    .site-text{
-        grid-column:1/2;
-        grid-row: none;
-    }
-    .scooter{
-        grid-column:1/4;
-        grid-row: none;
-        margin: 0 auto;
-        width: 50%;
-    }
-    .resgisteration-form{
-        grid-column:3/4;
-        grid-row: none;
-    }
-    .social-media-logos{
-      float: right;
-     }
-     .footer-form{
-      grid-template-rows:auto;
-      }
-      .footer-form{
-        grid-template-columns:1fr 2fr 2fr;
-        grid-template-rows:auto;
-        grid-gap:9px;
-      }
-      .calculate-button{
-        grid-area: auto;
-      }
-    .web-footer{
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-    }
-    .part2{
-     margin: auto 0;
-    }
-    footer p{
-      font-size: 14px;
-    }
-    .hide-text{
-      display: contents;
-    }
+
+  /* to align the three section of main horizontaly */
+  main {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .resgisteration-form {
+    grid-row: auto;
+  }
+
+  .site-text {
+    grid-column: 1/2;
+    grid-row: none;
+  }
+
+  .scooter {
+    grid-column: 1/4;
+    grid-row: none;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .resgisteration-form {
+    grid-column: 3/4;
+    grid-row: none;
+  }
+
+  /* to align the social media logos align to right */
+  .social-media-logos {
+    float: right;
+  }
+
+  /* to make both input box and button in one line  */
+  .footer-form {
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto;
+    grid-gap: 9px;
+  }
+
+  .calculate-button {
+    grid-area: auto;
+  }
+
+  .web-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .part2 {
+    margin: auto 0;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  /* to unhide the text in registration form */
+  .hide-text {
+    display: contents;
+  }
 
 }

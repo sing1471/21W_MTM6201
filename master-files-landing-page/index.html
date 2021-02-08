@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- linking the google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">   
 </head>
 <body>
+    <!-- header -->
     <header class="container">
-        <img src="images/logo/logo.png" class="site-logo">
+        <img src="images/logo/logo.png" class="site-logo" alt="logo">
     </header>
+    <!-- main -->
     <main class="container">
-        <div class="site-text">
+        <section class="site-text">
             <h1>Want to be your own boss?</h1>
             <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
-        </div>
-        <img src="images/bg-image/scooter.svg" class="scooter">
-        <div class="resgisteration-form">
+        </section>
+        <img src="images/bg-image/scooter.svg" class="scooter" alt="scooter">
+        <section class="resgisteration-form">
             <h3>Apply Now</h3>
             <p>Enter your info below<span class="hide-text"> to get started</span>.</p>
             <form>
@@ -28,19 +31,20 @@
         <div>
             <input type="text" class="input-box" placeholder="Last name">
         </div>
-            <input type="test" class="input-box" placeholder="Email address">
+            <input type="text" class="input-box" placeholder="Email address">
         <div>
             <input type="tel" class="input-box" placeholder="Phone number">
         </div>
     <div>
-            <input type="checkbox" name="checkbox" class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
             <label for="checkbox">I agree to dash terms</label>
         </div>
             <button type="submit" class="registration-button">DRIVE WITH US</button>
         </form>
        <p class="small-text">Already applied?<a href=" " class="small-anchor">Check your application status here</a></p>
-        </div>
+        </section>
     </main>
+    <!-- footer -->
     <footer>
         <div class="web-footer container">
             <div class="part1">
@@ -51,11 +55,11 @@
             <div class="site-footer">
             <form>
                 <div class="footer-form">
-            <div class="fifth">
-                <input type="text" class="input-box" placeholder="Hours">
+            <div>
+                <input type="text" class="input-box fifth" placeholder="Hours">
             </div>
-            <div class="sixth">
-                <input type="text" class="input-box" placeholder="City">
+            <div>
+                <input type="text" class="input-box sixth" placeholder="City">
             </div>
             <button type="submit" class="calculate-button">CALCULATE</button>
         </div>
