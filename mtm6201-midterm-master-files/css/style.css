@@ -347,6 +347,7 @@ ul {
   font-size: 24px;
   text-align: center;
   width: 100%;
+  /* to make shadow usabele for different browsers */
   -webkit-box-shadow: 0px 5px 8px 0px rgba(60, 59, 58, 0.7);
   -moz-box-shadow: 0px 5px 8px 0px rgba(60, 59, 58, 0.7);
   -ms-shadow: 0px 5px 8px 0px rgba(60, 59, 58, 0.7);
@@ -370,7 +371,7 @@ ul {
     transform: scale(0.9);
   }
 }
-
+/* to fade button while hover */
 .site-button:hover {
   animation-name: focused;
   animation-duration: 2s;
@@ -431,6 +432,7 @@ footer {
 }
 
 .social-icons {
+  /* to make the socila media logos in one line */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -452,7 +454,7 @@ footer {
   z-index: 999;
   cursor: pointer;
 }
-
+/* to make button shakkey when hover*/
 .back-to-top:hover {
   animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
   transform: translate3d(0, 0, 0);
@@ -519,7 +521,7 @@ footer {
   color: #f2f2f2;
   padding: 32px 0px;
 }
-
+/* to make heading italic */
 .italic {
   font-style: italic;
   font-size: 32px;
@@ -532,6 +534,7 @@ footer {
 
 .about-image {
   background: #26A682 url(../images/about.jpg);
+  /* to add transparent green color over th image  */
   background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
@@ -541,6 +544,7 @@ footer {
 
 .services-image {
   background: #26A682 url(../images/services.jpg);
+    /* to add transparent green color over th image  */
   background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
@@ -576,7 +580,7 @@ li {
   width: fit-content;
   margin: 0 auto;
 }
-
+/* to the content while on mobile view */
 .hide {
   display: none;
 }
@@ -652,6 +656,7 @@ li {
 
   .sa-president-grid.container {
     display: grid;
+      /* to divide section into differnet sizes */
     grid-template-columns: none;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(1, 33% 66%);
@@ -678,16 +683,18 @@ li {
 
   .services-grid {
     display: grid;
+      /* to divide section into differnet sizes */
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 18px;
   }
 
   .services-grid.grey-bc {
     display: grid;
+      /* to divide section into differnet sizes */
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 18px;
   }
-
+/* to add background to div */
   .bc-1 {
     background-image: url("../images/bar.jpg");
   }
@@ -711,6 +718,12 @@ li {
 
   .subscribe {
     display: flex;
+     /* to make code usable for diffrent browsers */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+
   }
 
   .sub {
@@ -744,6 +757,11 @@ li {
 
   .submit-dv {
     display: flex;
+     /* to make code usable for diffrent browsers */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
   }
 
   .hide-text {
@@ -765,7 +783,16 @@ li {
 
   .nav-menu {
     display: flex;
+     /* to make code usable for diffrent browsers */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     align-self: center;
+    -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-self: center;
+  -moz-align-self: center;
     margin-left: auto;
   }
 
@@ -775,6 +802,11 @@ li {
 
   .site-nav {
     display: flex;
+     /* to make code usable for diffrent browsers */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
   }
 
   .site-logo {
@@ -814,6 +846,7 @@ li {
 
   .sa-president-grid {
     display: grid;
+    /* to divide section into differnet sizes */
     grid-template-columns: repeat(1, 1fr 1fr 4fr);
     grid-template-rows: none;
   }
@@ -839,7 +872,7 @@ li {
     margin: 34px auto;
 
   }
-
+/* to make all the three section in one column */
   .www {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -867,7 +900,7 @@ li {
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 18px;
   }
-
+/* to add background */
   .bc-1 {
     background-image: url("../images/bar.jpg");
   }
@@ -886,6 +919,11 @@ li {
 
   .subscribe {
     display: flex;
+     /* to make code usable for diffrent browsers */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     width: fit-content;
     margin: 0 auto;
   }
@@ -906,6 +944,11 @@ li {
 
   .special-logos ul {
     display: flex;
+     /* to make code usable for diffrent browsers */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
   }
 
   .special {
@@ -967,6 +1010,11 @@ li {
 
   .submit-dv {
     display: flex;
+     /* to make code usable for diffrent browsers */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
   }
 
   .address {
