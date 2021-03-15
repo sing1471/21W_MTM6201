@@ -117,7 +117,10 @@ html {
     clear: both;
   }
 /* mobile styles */
-.container{max-width: 1920px;padding: 0 36px;}
+.container{
+  max-width: 300px;
+  margin: 0 auto;
+}
 header{
     background-color: #3c3b3a;
 }
@@ -150,9 +153,6 @@ ul{
 }
 .active {
     font-weight: bold;
-}
-.construction{
-  margin:25px 0;
 }
 .icon-div{
     display: grid;
@@ -470,9 +470,6 @@ font-size: 24px;
   .submit-dv{
   display: flex;
   }
-  .contact-section1,.contact-section2{
-    margin: 18px 0;
-  }
 }
 @media screen and (min-width:769px) {
   .container{
@@ -615,9 +612,7 @@ background-repeat: no-repeat;
   grid-template-columns: 2fr 1fr;
   margin: 100px auto;
 }
-.map{
-  width: 812px;
-}
+
 .contact-form {
 padding: 18px 30px;}
 .contact-form div{
