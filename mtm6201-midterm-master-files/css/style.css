@@ -317,11 +317,12 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+/* to add background image */
 .school {
   background-image: url("../images/school.jpg");
 }
 
+/* to add background image */
 .entertainment {
   background-image: url("../images/entertainment.jpg");
 }
