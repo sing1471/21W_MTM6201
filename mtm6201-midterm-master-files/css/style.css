@@ -470,6 +470,9 @@ font-size: 24px;
   .submit-dv{
   display: flex;
   }
+  .hide-text{
+    display: none;
+  }
 }
 @media screen and (min-width:769px) {
   .container{
@@ -612,7 +615,9 @@ background-repeat: no-repeat;
   grid-template-columns: 2fr 1fr;
   margin: 100px auto;
 }
-
+.grey-bc{
+  background-color: unset;
+}
 .contact-form {
 padding: 18px 30px;}
 .contact-form div{
