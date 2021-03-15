@@ -76,11 +76,11 @@ html {
   }
   
   h2 {
-    font-size:32px;
+    font-size:40px;
   }
   
   h3 {
-    font-size: 24px;
+    font-size: 30px;
   }
   
   h4 {
@@ -607,4 +607,42 @@ background-repeat: no-repeat;
   grid-template-columns: 2fr 1fr;
   margin: 34px auto;
 }
+.contact-section2{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 34px auto;
+}
+.map{
+  width: 812px;
+}
+.contact-form {
+padding: 18px 30px;}
+.contact-form div{
+  margin: 13px 0;
+}
+.contact-form label{
+  margin: 9px 0;
+  display: block;
+}
+.input-box{
+  height: 50px;
+}
+.input-msg-box {
+  height: 148px;
+}
+.icons1 {
+  width: fit-content;
+  margin: 0 auto;
+}
+.submit{
+  width:210px;
+  margin-left:auto ;
+  background-color: #3c3b3a;
+  }
+  .submit-dv{
+  display: flex;
+  }
+  .address{
+font-size: 18px;
+  }
 }
