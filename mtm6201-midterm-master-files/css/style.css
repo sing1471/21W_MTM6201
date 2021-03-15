@@ -363,7 +363,8 @@ li{
 }
 @media screen and (min-width:376px) and (max-width: 768px) {
   .container{
-    padding: 0 80px;
+    max-width: 80%;
+    margin: 0 auto;
   }
   .hero-header{
     font-size: 70px;
@@ -406,7 +407,8 @@ li{
 }
 .hide{
   display:unset;
-  width: 218px;
+  width: 100%;
+  padding: 0 10px;
   margin: 30px 0;
   background-position: center;
 background-size: cover;
@@ -474,7 +476,7 @@ font-size: 24px;
 }
 @media screen and (min-width:769px) {
   .container{
-    max-width: 1640px;
+    max-width: 84%;
     margin:0 auto;
   }
   .hero-header{
@@ -549,7 +551,7 @@ width: 340px;
 }
 .hide{
   display:unset;
-  width: 813px;
+  width: 100%;
   margin: 30px 0;
   background-position: center;
 background-size: cover;
