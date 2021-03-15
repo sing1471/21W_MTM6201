@@ -148,7 +148,7 @@ ul{
   font-size: 40px;
   line-height: 47px;
 }
-.nav-menu li a.active {
+.active {
     font-weight: bold;
 }
 .construction{
@@ -604,13 +604,14 @@ background-repeat: no-repeat;
   /* contact page */
   .contact-section1{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
   margin: 34px auto;
 }
 .contact-section2{
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 34px auto;
+  margin: 100px auto;
 }
 .map{
   width: 812px;
@@ -628,7 +629,7 @@ padding: 18px 30px;}
   height: 50px;
 }
 .input-msg-box {
-  height: 148px;
+  height: 220px;
 }
 .icons1 {
   width: fit-content;
