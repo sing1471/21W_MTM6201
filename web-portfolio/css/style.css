@@ -1,0 +1,560 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ---------------------------------
+          Custom Styles
+------------------------------------ */
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+*{
+    color: black;
+}
+li {
+  height: fit-content;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+p {
+  margin: 9px 0;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3rem
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  line-height: inherit;
+}
+
+.profile-pic {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* custom styles */
+html{
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+header{
+    background-color: black;
+}
+nav{
+    height: fit-content;
+    margin-top: auto;
+    margin-right: 0px;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.logo{
+    width: 120px;
+}
+.site-nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+}
+.nav-ul li{
+    margin: 0 1.5em;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+.center{
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+.black-button{
+    margin: 0 auto;
+    width: fit-content;
+    display: block;
+    border: none;
+    background-color: white;
+    border-radius: 1em;
+    font-weight: bolder;
+}
+.bg-blur{
+    height: fit-content;
+    padding:80px 0;
+    background-image: url(../images/pexels-sy-donny-1841841.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    color: white;
+    margin: 9px 0;
+}
+.bg-text{
+    background-color: rgba(0,0,0, 0.8);
+    width: fit-content;
+    margin: 0 auto;
+    padding:1em;
+}
+.three-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 24px auto;
+}
+.child-sec{
+    background-color: black;
+    border-radius: 18px;
+    padding: 2em;
+}
+.child-sec:nth-child(2){
+    margin: auto 2em;
+}
+.white{
+    color:white;
+}
+.white li{
+    color: white;
+}
+.grey{
+    color:rgb(95, 95, 95);
+}
+.hdw{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.b-border{
+    border: 2px solid black;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.footer-clean {
+    padding:50px 0;
+    background-color:rgb(0, 0, 0);
+    color:#ffffff;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  .our-customers {
+    display: flex;
+    margin: 2em 0;
+}
+.profile {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 24px;
+    margin: 0 auto;
+  }
+.profile-img{
+    width: 20%;
+    justify-content: center;
+    border-radius: 4em;
+    margin-left: auto;
+}
+.customer-box{
+    border: 2px solid black;
+    margin:0 1em;
+    border-radius: 50px;
+    padding: 2em;
+}
+.our-work{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
+    margin: 2em 0;
+}
+.bg-img{
+    width:360px;
+    height: 360px;
+}
+.bg-img.first{
+    background-image: url(../images/profile-logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img.second{
+    background-image: url(../images/DAUR\ 2ND.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img.third{
+    background-image: url(../images/WAALI\ 2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img.fourth{
+    background-image: url(../images/Untitled-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img.five{
+    background-image: url(../images/MANZILN.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img.six{
+    background-image: url(../images/raule\ insta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img.seven{
+    background-image: url(../images/1212.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img.eight{
+    background-image: url(../images/team3studious.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img.nine{
+    background-image: url(../images/daur\ shadow.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-img{
+    float: left;
+    width: 30%;
+    margin: 0 1em;
+}
+.contact-form {
+    padding: 18px 30px;
+  }
+
+  .contact-form div {
+    margin: 13px 0;
+  }
+
+  .contact-form label {
+    margin: 9px 0;
+    display: block;
+  }
+
+  .input-box {
+    height: 50px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 18px;
+  }
+
+  .input-msg-box {
+    height: 220px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 18px;
+  }
+.submit-button{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 18px;
+    padding: 9px;
+}
+.location{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 2em 0;
+}
+button{
+ /* animation */
+ animation-name: popping;
+ animation-duration: 2s;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-in-out;
+}
+
+@keyframes popping {
+
+ 0%,
+ 100% {
+   transform: scale(0.7);
+
+ }
+
+ 50% {
+   transform: scale(0.9);
+ }
+}
+/* to fade button while hover */
+button:hover {
+ animation-name: focused;
+ animation-duration: 2s;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-in-out;
+}
+
+@keyframes focused {
+
+ 0%,
+ 100% {
+   opacity: 100%;
+   transform: scale(0.7);
+
+ }
+
+ 50% {
+   opacity: 50%;
+   transform: scale(0.7);
+ }
+
+ 10%,
+ 90% {
+   transform: translate3d(-1px, 0, 0);
+ }
+
+ 20%,
+ 80% {
+   transform: translate3d(2px, 0, 0);
+ }
+
+ 30%,
+ 50%,
+ 70% {
+   transform: translate3d(-4px, 0, 0);
+ }
+
+ 40%,
+ 60% {
+   transform: translate3d(4px, 0, 0);
+ }
+}
+
+@media screen and (min-width:580px) and (max-width: 1200px) {
+    .our-work{
+        grid-template-columns: repeat(2,1fr);
+    }  
+    .bg-img{
+        width:180px;
+        height: 180px;
+    } 
+}
+@media screen and (min-width:376px) and (max-width: 768px) {
+    .location{
+        grid-template-columns: none;
+    }
+    .nav-ul li{
+        margin: 0 9px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:376px){
+    .nav-ul li{
+        display: unset;
+    }
+    .our-work{
+        grid-template-columns:none;
+        margin: 0 auto;
+    } 
+    .logo{
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:375px) and (max-width: 580px) {
+    .our-work{
+        grid-template-columns:none;
+        margin: 0 auto;
+    }  }
